@@ -1,0 +1,41 @@
+﻿<Window x:Class="ShopShoes.Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopShoes"
+        mc:Ignorable="d"
+        Title="Сотрудники" Height="450" Width="800" Background="#2F4F4F" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock Margin="0,0,621,392" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Сотрудники</TextBlock>
+        <DataGrid x:Name="EmployeeDG" Margin="10,27,482,207" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" SelectionChanged="EmployeeDG_SelectionChanged"></DataGrid>
+        <TextBox x:Name="Surname" Margin="57,237,482,155" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"></TextBox>
+        <TextBox x:Name="Name" Margin="57,285,482,107" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" ></TextBox>
+        <TextBox x:Name="Middle_name" Margin="57,326,482,66" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Phone" Margin="529,113,10,279" MaxLength="11" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="INN" Margin="529,156,10,236" MaxLength="9" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="SNILS" Margin="529,195,10,197" MaxLength="12" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Passport_number_Employee" Margin="530,237,9,155" MaxLength="6" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Passport_series_Employee" Margin="530,269,9,123" MaxLength="4" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Passwd" Margin="529,310,10,82" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <ComboBox x:Name="Post" Margin="529,71,10,321" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <DatePicker Name="DR" Margin="530,27,0,363"></DatePicker>
+        <TextBlock Margin="10,237,756,155" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Ф</TextBlock>
+        <TextBlock Margin="10,285,746,107" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">И</TextBlock>
+        <TextBlock Margin="10,326,746,66" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text="О"/></TextBlock>
+        <TextBlock Margin="429,29,267,363" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Дата рождения</TextBlock>
+        <TextBlock Margin="419,113,268,279" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Номер телефона</TextBlock>
+        <TextBlock Margin="488,156,267,236" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>ИНН</TextBlock>
+        <TextBlock Margin="473,195,268,197" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>СНИЛС</TextBlock>
+        <TextBlock Margin="419,237,268,155" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Номер паспорта</TextBlock>
+        <TextBlock Margin="419,264,268,128" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Серия паспорта</TextBlock>
+        <TextBlock Margin="440,71,279,321" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Должность</TextBlock>
+        <TextBlock Margin="456,310,279,82" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Пароль</TextBlock>
+        <Button x:Name="Insert" Margin="390,382,335,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Insert_Click">Добавить</Button>
+        <Button x:Name="Update" Margin="530,382,195,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Update_Click">Изменить</Button>
+        <Button x:Name="Delete" Margin="664,382,61,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Delete_Click">Удалить</Button>
+        <Button x:Name="Menu" Margin="10,386,683,10" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Menu_Click">В меню</Button>
+        <Button x:Name="Export" Margin="315,27,410,360" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Export_Click">Экспорт</Button>
+        <Button x:Name="Import" Margin="315,71,410,316" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Import_Click">Импорт</Button>
+    </Grid>
+</Window>

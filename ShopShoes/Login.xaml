@@ -1,0 +1,14 @@
+﻿<Window x:Class="ShopShoes.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopShoes"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" Background="#2F4F4F">
+    <Grid>
+        <TextBox x:Name="Phone" Margin="133,129,139,250" FontFamily="Segoe UI" FontSize="14px"></TextBox>
+        <PasswordBox x:Name="Password" Margin="133,190,139,189" FontFamily="Segoe UI" FontSize="14px"></PasswordBox>
+        <Button x:Name="Vxod" Content="Войти" Click="Vxod_Click" Margin="325,253,360,119" FontFamily="Segoe UI" FontSize="14px" Background="#FFFFFF"></Button>
+    </Grid>
+</Window>

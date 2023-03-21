@@ -1,0 +1,23 @@
+﻿<Window x:Class="ShopShoes.OrderProd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopShoes"
+        mc:Ignorable="d"
+        Title="OrderProd" Height="450" Width="800" Background="#2F4F4F" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock Margin="0,0,621,392" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Заказы</TextBlock>
+        <DataGrid x:Name="OrderDG" Margin="10,27,482,207" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" SelectionChanged="OrderDG_SelectionChanged"></DataGrid>
+        <ComboBox x:Name="Product" Margin="451,36,10,356" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"></ComboBox>
+        <ComboBox x:Name="Employee" Margin="451,81,10,311" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" ></ComboBox>
+        <TextBlock Margin="351,36,369,356" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Товар</TextBlock>
+        <TextBlock Margin="351,81,378,311" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Сотрудник</TextBlock>
+        <Button x:Name="Insert" Margin="715,127,10,260" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Insert_Click">Добавить</Button>
+        <Button x:Name="Update" Margin="715,164,10,223" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Update_Click">Изменить</Button>
+        <Button x:Name="Delete" Margin="715,201,10,186" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Delete_Click">Удалить</Button>
+        <Button x:Name="Menu" Margin="10,386,683,10" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Menu_Click">В меню</Button>
+        <Button x:Name="Export" Margin="10,227,715,160" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Export_Click">Экспорт</Button>
+        <Button x:Name="Import" Margin="94,227,631,160" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Import_Click">Импорт</Button>
+    </Grid>
+</Window>

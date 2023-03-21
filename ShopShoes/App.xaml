@@ -1,0 +1,9 @@
+﻿<Application x:Class="ShopShoes.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ShopShoes"
+             StartupUri="Graph.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="ShopShoes.MenuProd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopShoes"
+        mc:Ignorable="d"
+        Title="MenuProd" Height="450" Width="800" Background="#2F4F4F">
+    <Grid>
+        <Button Name="Aviabillity" Content="Наличие товаров" Background="Chocolate" Margin="10,160,638,214" Foreground="White" Click="Aviabillity_Click"></Button>
+        <Button x:Name="Order" Content="Заказы" Background="Chocolate" Margin="10,210,638,164" Foreground="White" Click="Order_Click"></Button>
+        <Button x:Name="Product" Content="Товары" Background="Chocolate" Margin="10,260,638,114" Foreground="White" Click="Product_Click"></Button>
+        <Button x:Name="Provider" Content="Поставщики" Background="Chocolate" Margin="10,310,638,64" Foreground="White" Click="Provider_Click"></Button>
+        <Button x:Name="TypeProduct" Content="Категории" Background="Chocolate" Margin="10,360,638,14" Foreground="White" Click="TypeProduct_Click"></Button>
+        <Button x:Name="Avto" Content="Выйти" Background="Chocolate" Margin="687,0,10,384" Foreground="White" Height="25" VerticalAlignment="Bottom" Click="Avto_Click"></Button>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="ShopShoes.Product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopShoes"
+        mc:Ignorable="d"
+        Title="Товары" Height="450" Width="800" Background="#2F4F4F" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock Margin="0,0,621,392" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite">Товары</TextBlock>
+        <DataGrid x:Name="ProductDG" Margin="10,27,482,207" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" SelectionChanged="ProductDG_SelectionChanged"></DataGrid>
+        <TextBox x:Name="Name" Margin="529,27,10,365" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Cent" Margin="529,80,10,312" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBox x:Name="Quantity" Margin="529,134,10,258" MaxLength="50" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <DatePicker x:Name="DR" Margin="529,185,10,207" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <ComboBox x:Name="Type_product" Margin="529,236,10,156" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <ComboBox x:Name="Provider" Margin="529,284,10,107" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate"/>
+        <TextBlock Margin="420,27,268,365" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Наименование</TextBlock>
+        <TextBlock Margin="473,80,267,312" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Цена</TextBlock>
+        <TextBlock Margin="460,134,268,258" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Остаток</TextBlock>
+        <TextBlock Margin="402,189,268,203" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite" RenderTransformOrigin="0.412,-0.056"><Run Text=""/>Дата производства</TextBlock>
+        <TextBlock Margin="448,237,268,155" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Категория</TextBlock>
+        <TextBlock Margin="448,285,268,107" FontFamily="Comic Sans MS, Verdana" Foreground="AntiqueWhite"><Run Text=""/>Поставщик</TextBlock>
+        <Button x:Name="Insert" Margin="390,382,335,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Insert_Click">Добавить</Button>
+        <Button x:Name="Update" Margin="530,382,195,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Update_Click">Изменить</Button>
+        <Button x:Name="Delete" Margin="664,382,61,5" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Delete_Click">Удалить</Button>
+        <Button x:Name="Menu" Margin="10,386,683,10" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Menu_Click">В меню</Button>
+        <Button x:Name="Export" Margin="10,227,715,160" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Export_Click">Экспорт</Button>
+        <Button x:Name="Import" Margin="94,227,631,160" Background="Snow" BorderBrush="Aquamarine" Foreground="Chocolate" Click="Import_Click">Импорт</Button>
+    </Grid>
+</Window>
